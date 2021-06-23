@@ -141,6 +141,15 @@ body {
   line-height: 1.5;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color:yellow;
+}
+
 .block {
   display: block;
 }
@@ -249,8 +258,9 @@ body {
 
 .Skills {
   width: 230px;
-  /* margin: 0 auto; */
-  margin-left: 390px;
+  margin: 0 auto;
+  /* margin-left: 390px; */
+  /* ↑↑ Skills 不建議用大幅度 margin-left 來推擠置中，改用 margin: 0 auto 較適合 */
   border-left: 1px solid white;
 }
 
@@ -259,6 +269,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Method 區塊的電話、信箱、作品連結與底下的社群 icon 可加上 a 標籤與 hover 效果，電話與信箱可使用 Emmet 語法 a:tel, a:mail，提升使用者體驗 */
 .Method {
   font-weight: 300;
   text-align: center;
@@ -266,6 +277,10 @@ body {
 
 .Method li {
   margin-bottom: 16px;
+}
+
+img:hover{
+  color: #a00404;
 }
 
 .Content-Border {
